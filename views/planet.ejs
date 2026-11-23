@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head.ejs') %>
+
+    <body>
+        <h1>The Solar System</h1>
+        <%- include('partials/nav.ejs') %>
+            <main>
+
+                <h2>Planet <%= planetName %>
+                </h2>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-5 justify-content-center object-fit-scale border">
+                            <img id="planetimg" src="<%= planetInfo.image %>">
+                        </div>
+                        <div class="col-1 d-flex">
+                            <div class="vr"></div>
+                        </div>
+                        <div class="col-5">
+                            <strong>Description: </strong>
+                            <%= planetInfo.description %><br>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="card">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col">
+                            <strong>Distance from Sun: </strong>
+                            <%= planetInfo.distanceFromSun %><br>
+
+                                <strong>Year Length: </strong>
+                                <%= planetInfo.yearLength %><br>
+
+                                    <strong>Radius: </strong>
+                                    <%= planetInfo.radius %> miles<br>
+                                        <strong>1 Earth Day: </strong>
+                                        <%= planetInfo.oneEarthDay %><br>
+                                            <strong>Number of Moons: </strong>
+                                            <%= planetInfo.moons %><br>
+
+                                                <a href="<%=planetInfo.websiteLink %>" target="_blank">Nasa Link</a><br>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <%- include('partials/footer.ejs') %>
+    </body>
+
+</html>
