@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head.ejs') %>
+
+    <body>
+        <h1>The Solar System</h1>
+        <%- include('partials/nav.ejs') %>
+            <main>
+
+                <h2>Nasa Picture of the day <%=podDate%>
+                </h2>
+                <div class="row d-flex">
+                    <div class="col-6">
+                        <img src="<%= podImage %>" width=500 alt="<%= podAlt %>">
+                    </div>
+                    <div class="col-6">
+                        <div class="explanation">
+                            <%- podExplanation %>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            <%- include('partials/footer.ejs') %>
+    </body>
+
+</html>

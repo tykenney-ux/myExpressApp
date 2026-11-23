@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Solar System</title>
-</head>
+<%- include('partials/head.ejs') %>
+    <style>
+        body {
+            background-image: url("<%= image %>");
+            background-size: cover;
+        }
+    </style>
 
-<body>
-    <h1>The Solar System</h1>
-    <nav><a href="/"> Home </a>
-        <a href="/earth"> Earth </a>
-        <a href="/mars"> Mars</a>
-    </nav>
-    <img src="/img/solar-system.jpg">
-</body>
+    <body>
+        <h1 class="card">The Solar System</h1>
+        <%- include('partials/nav.ejs') %>
+            <main>
+                <img src="/img/solar-system.jpg" width="1000" class="mx-auto d-block">
+            </main>
+            <%- include('partials/footer.ejs') %>
+
+    </body>
 
 </html>

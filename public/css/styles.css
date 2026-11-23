@@ -1,0 +1,48 @@
+body {
+    background-color: #CBE2F6;
+    text-align: center;
+
+}
+
+main {
+    min-height: 71.35vh;
+    justify-content: center;
+}
+
+#planetimg {
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+nav a {
+    margin-top: 0px;
+
+}
+
+h1 {
+    background-color: white;
+    margin-left: 2rem;
+    width: 95%;
+}
+
+h2 {
+    background-color: white;
+    margin-left: 2rem;
+    width: 95%;
+}
+
+nav {
+    background-color: white;
+    max-height: 2rem;
+}
+
+.card {
+    width: 95%;
+    margin-left: 2rem;
+
+}
