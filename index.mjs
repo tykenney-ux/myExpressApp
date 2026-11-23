@@ -1,5 +1,5 @@
 import express from 'express';
-import fech from 'node-fetch';
+import fetch from 'node-fetch';
 const planets = (await import('npm-solarsystem')).default;
 import 'dotenv/config'
 
